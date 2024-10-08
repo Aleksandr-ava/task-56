@@ -1,8 +1,7 @@
-from fastapi import FastAPI, HTTPException, Body, status, Request, Form
+from fastapi import FastAPI, HTTPException, status, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
-from typing import List
 
 app = FastAPI()
 templates = Jinja2Templates(directory='templates')
